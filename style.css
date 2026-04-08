@@ -36,7 +36,11 @@ nav a:hover {
 
 
 
-
+form input[type="text"],
+form input[type="email"] {
+    width: 200px; /* menší šířka políček */
+    padding: 5px;
+    margin-bottom: 10px;
 
 form button:hover {
     background: #777;
