@@ -33,26 +33,32 @@ nav a:hover {
 
 
 
-form label {
-    display: block;      /* label bude blok nad polem */
-    margin-top: 15px;    /* mezera nad label */
-    margin-bottom: 5px;  /* mezera mezi label a polem */
-    font-weight: bold;
+
+
+form button:hover {
+    background: #777;
 }
 
-form input,
-form select,
-form textarea {
-    display: block;
-    width: 80%;
-    padding: 8px;
+
+/* Všechny inputy kromě textarea */
+form input[type="text"],
+form input[type="email"] {
+    width: 200px; /* menší šířka políček */
+    padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
 }
 
+/* Textarea pro zprávu zůstane širší */
+form textarea {
+    width: 400px; /* větší, aby se vešla zpráva */
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Tlačítko */
 form button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     background: #555;
     color: white;
     border: none;
