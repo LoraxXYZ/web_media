@@ -36,27 +36,21 @@ nav a:hover {
 
 
 
-form input[type="text"],
-form input[type="email"] {
-    width: 200px; /* menší šířka políček */
-    padding: 5px;
-    margin-bottom: 10px;
 
-form button:hover {
-    background: #777;
-}
+
 
 #contactForm input[type="text"],
 #contactForm input[type="email"],
-#contactForm input[type="tel"] {
-    width: 200px; /* kratší políčka */
+#contactForm input[type="tel"],
+#contactForm select {
+    width: 200px;          /* kratší políčka */
     padding: 5px;
-    display: block; /* aby byla pod sebou */
+    display: block;        /* pod sebe */
     margin-bottom: 10px;
 }
 
 #contactForm textarea {
-    width: 400px; /* větší políčko pro zprávu */
+    width: 400px;          /* větší políčko pro zprávu */
     height: 100px;
     padding: 5px;
     display: block;
@@ -74,4 +68,10 @@ form button:hover {
 
 #contactForm button:hover {
     background: #777;
+}
+
+#contactForm label {
+    display: block;        /* každé label nad políčkem */
+    margin-top: 10px;
+    font-weight: bold;
 }
